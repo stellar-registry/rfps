@@ -113,51 +113,54 @@ Creator of CosmWasm, the WebAssembly smart-contract platform that directly inspi
 > 2. Audit credits are provided as part of the testnet tranche completion. Audit costs should not be included in your budget.
 
 
-## Tranche 1 - MVP
+## Tranche 1 - Requirements gathering
 
-[Deliverable 1]
+### Deliverable 1: Architecture & specs
 
-- Brief description
-- How to measure completion
-- Estimated date of completion
-- Budget
-
-[Deliverable 2]
-
-etc.
+- **Brief description:** Architecture documents, SEP proposals (SEP-58 and the verifier-API SEP), and the high-level interoperability specification defining the formats and interfaces between the three parties. 
+- **How to measure completion:** A spec everyone can build against.
+- **Estimated date of completion:** 3 weeks after signing
+- **Budget:** $26,250
 
 
-## Tranche 2 - Testnet:
+## Tranche 2 - Testnet
 
-[Deliverable 1]
+### Deliverable 1: Verification engine
 
-- Brief description
-- How to measure completion
-- Estimated date of completion
-- Budget
+- **Brief description:** hermetic rebuild engine, signing, and claim submission, tested end-to-end.
+- **How to measure completion:** Source info added to Testnet registry, or wasm uploaded to testnet that includes source info, results in processing by Runtime Verification and subsequent submission of verification data to Registry.
+- **Estimated date of completion:** 2 weeks after Tranch 1 completion.
+- **Budget:** $17,500
 
-[Deliverable 2]
+### Deliverable 2: Contracts, indexer & query engine
 
-etc.
+- **Brief description:** Final contract interface & event design; GoldSky indexer; and query API.
+- **How to measure completion:** Source info added to Testnet registry, or wasm uploaded to testnet that includes source info, results in processing by Runtime Verification and subsequent submission of verification data to Registry, which exposes it via its query API.
+- **Estimated date of completion:** 3 weeks after Tranch 1 completion.
+- **Budget:** $26,250
 
+## Tranche 3 - Mainnet & corpus back-verification
 
-## Tranche 3 - Mainnet:
+### Deliverable 1: Integrate & launch on mainnet
 
-[Deliverable 1]
+- **Brief description:** Connect every component end-to-end and launch on mainnet. SEPs, RFCs, and the API spec are settled; protocols finalized.
+- **How to measure completion:** Source info added to mainnet registry, or wasm uploaded to mainnet that includes source info, results in processing by Runtime Verification and subsequent submission of verification data to Registry, which exposes it via its production query API.
+- **Estimated date of completion:** 4 weeks after Tranch 2 completion.
+- **Budget:** $35,000
 
-- Brief description
-- How to measure completion
-- Estimated date of completion
-- Budget
+### Deliverable 2: Corpus back-verification
 
-[Deliverable 2]
-
-etc.
+- **Brief description:** A significant corpus of existing contracts is recovered and uploaded.
+- **How to measure completion:** Tranch 1 will help determine exact fraction of extant-at-SEP-creation contracts to be back-verified. At a minimum:
+  - rain-crossmint smart-account/factory wasm, which accounts for 70% of active Soroban mainnet contracts
+  - a significant fraction (20%? 50%?) of ~970 wasms that carry both a `cliver` and `rsver`. The final fraction depends on how many of these wasms have a source repository which source can be located.
+- **Estimated date of completion:** 3 weeks after Tranch 2 completion.
+- **Budget:** $26,250
 
 
 # Budget Total
-Please note: submission with budgets amounts exceeding the maximum will be denied without review. Find budget guidelines for each award in the SCF Handbook.
+> Please note: submission with budgets amounts exceeding the maximum will be denied without review. Find budget guidelines for each award in the SCF Handbook.
 
-
+$131,250
 
 
