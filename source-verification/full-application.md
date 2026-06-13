@@ -134,7 +134,7 @@ Creator of CosmWasm, the WebAssembly smart-contract platform that directly inspi
 
 ### Deliverable 2: Contracts, indexer & query engine
 
-- **Brief description:** Final contract interface & event design; GoldSky indexer; query API.
+- **Brief description:** Final contract interface & event design; GoldSky indexer; and query API.
 - **How to measure completion:** Source info added to Testnet registry, or wasm uploaded to testnet that includes source info, results in processing by Runtime Verification and subsequent submission of verification data to Registry, which exposes it via its query API.
 - **Estimated date of completion:** 3 weeks after Tranch 1 completion.
 - **Budget:** $26,250
